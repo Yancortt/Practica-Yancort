@@ -1,0 +1,55 @@
+__S0 800 0 ABS 0
+__S1 23 0 ABS 0
+__S3 0 0 ABS 0
+__Hconfig 2009 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__HresetVec 0 0 ABS 0
+__LresetVec 0 0 ABS 0
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__Hudata_shr 0 0 ABS 0
+__Ludata_shr 0 0 ABS 0
+__Hedata 0 0 ABS 0
+__Ledata 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hudata_bank1 0 0 ABS 0
+__Ludata_bank1 0 0 ABS 0
+__Hspace_0 800 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 23 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_3 0 0 ABS 0
+__Lspace_3 0 0 ABS 0
+__Hspace_4 4010 0 ABS 0
+__Lspace_4 0 0 ABS 0
+__Hudata_bank2 0 0 ABS 0
+__Ludata_bank2 0 0 ABS 0
+__Hudata_bank3 0 0 ABS 0
+__Ludata_bank3 0 0 ABS 0
+%segments
+udata 20 22 RAM 20 1
+code FE6 FFF CODE FE6 0
+resetVec FE0 FE5 CODE FE0 0
+%locals
+build/default/production/YanOne.o
+YanOne.s
+37 7F3 0 CODE 0
+38 7F3 0 CODE 0
+39 7F5 0 CODE 0
+40 7F6 0 CODE 0
+41 7F8 0 CODE 0
+42 7F9 0 CODE 0
+43 7FA 0 CODE 0
+44 7FC 0 CODE 0
+46 7FD 0 CODE 0
+47 7FD 0 CODE 0
+48 7FE 0 CODE 0
+50 7FF 0 CODE 0
+30 7F0 0 CODE 0
+32 7F0 0 CODE 0
+34 7F2 0 CODE 0

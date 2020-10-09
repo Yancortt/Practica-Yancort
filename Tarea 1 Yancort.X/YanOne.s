@@ -1,0 +1,70 @@
+PROCESSOR 16F887
+#include <xc.inc>
+
+;CONFIG word1 ;obligatorio para iniciar un progrma
+CONFIG FOSC = INTRC_NOCLKOUT
+CONFIG WDTE = OFF
+CONFIG PWRTE = ON
+CONFIG MCLRE = OFF
+CONFIG CP = OFF
+CONFIG CPD = OFF
+CONFIG BOREN = OFF
+CONFIG IESO = OFF
+CONFIG FCMEN = ON
+CONFIG DEBUG = ON
+
+;CONFIG word2 ;obligatorio para iniciar un progrma
+CONFIG BOR4V=BOR40V
+CONFIG WRT = OFF
+
+PSECT udata ;obligatorio para declarar variables
+Lol0: ;Variables editables
+    DS 1
+Lol2: ;Variables editables
+    DS 1
+Lol3: ;Variables editables
+    DS 1
+PSECT resetVec,class=CODE,delta=2 ;obligatorio para declarar variables
+
+resetVec:
+    
+PAGESEL Wii
+
+goto Wii
+    
+PSECT code
+Wii:
+BANKSEL ANSELH
+CLRF ANSELH
+BANKSEL TRISB
+MOVLW 0b00000000
+MOVWF TRISB
+BANKSEL PORTB
+CLRF PORTB
+BANKSEL OSCCON
+MOVLW  0b01110000
+MOVWF  OSCCON
+INICIO:
+bcf STATUS,5
+bcf STATUS,6
+bcf STATUS,0
+MOVLW  00000001B
+MOVWF  PORTB
+
+GOTO IRAIZQUIERDA
+
+IRAIZQUIERDA:
+RLF PORTB
+BTFSS PORTB,7
+GOTO IRAIZQUIERDA
+
+GOTO IRADERECHA 
+
+IRADERECHA:
+RRF PORTB
+BTFSS PORTB,0
+GOTO IRADERECHA
+
+GOTO IRAIZQUIERDA
+
+END
