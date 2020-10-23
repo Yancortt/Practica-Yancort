@@ -1,0 +1,49 @@
+__S0 800 0 ABS 0
+__S1 23 0 ABS 0
+__Hconfig 2009 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__HresetVec 0 0 ABS 0
+__LresetVec 0 0 ABS 0
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__Hudata_shr 0 0 ABS 0
+__Ludata_shr 0 0 ABS 0
+__Hedata 0 0 EEDATA 3
+__Ledata 0 0 EEDATA 3
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hudata_bank1 0 0 ABS 0
+__Ludata_bank1 0 0 ABS 0
+__Hspace_0 400 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 23 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_3 0 0 ABS 0
+__Lspace_3 0 0 ABS 0
+__Hspace_4 4010 0 ABS 0
+__Lspace_4 0 0 ABS 0
+__Hudata_bank2 0 0 ABS 0
+__Ludata_bank2 0 0 ABS 0
+__Hudata_bank3 0 0 ABS 0
+__Ludata_bank3 0 0 ABS 0
+%segments
+udata 20 22 RAM 20 1
+code 7F4 7FF CODE 7F4 0
+resetVec 7EE 7F3 CODE 7EE 0
+%locals
+build/default/production/lalala.o
+lalala.s
+31 3FA 0 CODE 0
+32 3FA 0 CODE 0
+33 3FB 0 CODE 0
+34 3FC 0 CODE 0
+35 3FD 0 CODE 0
+36 3FE 0 CODE 0
+37 3FF 0 CODE 0
+27 3F7 0 CODE 0
+28 3F7 0 CODE 0
+29 3F9 0 CODE 0
